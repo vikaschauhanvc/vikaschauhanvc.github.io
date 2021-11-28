@@ -3,6 +3,42 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/">
 <link rel="stylesheet" href="./Vikas_files/jemdoc.css" type="text/css">
 <script src="./Vikas_files/mymail.js" type="text/javascript"></script>
+
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #998900;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+</style>
 <title>Vikas Chauhan</title>
 <link rel="shortcut icon" href="./Vikas_files/v.ico" />
 </head>
@@ -10,13 +46,19 @@
 <title>Vikas</title>
 </head>
 <body>
-<ul id="layout-menu">
+
+ <div class="fixed-header">
+        <div class="container">
+            <nav>
 
 
 <a href="index.html"  >&nbsp;&nbsp;Home</a>
-<a href="aboutme.html" class="current">&nbsp;&nbsp;Qualificatios</a>
+<a href="aboutme.html" class="current">&nbsp;&nbsp;Qualifications</a>
 <a href="publications.html">&nbsp;&nbsp;Publications</a>
 
+            </nav>
+        </div>
+    </div>
 
 </ul><table summary="Table for page layout." id="tlayout">
 <tbody><tr valign="top">
@@ -70,6 +112,8 @@
 </tr>
 </tbody>
 </table>
-
+<div class="fixed-footer">
+        <div class="container"></div>        
+    </div>
 
 </body></html>
